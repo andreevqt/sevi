@@ -1,0 +1,70 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: 200px;
+  line-height: 1;
+  $parent: &;
+  font-size: 20px;
+
+  border-bottom: 1px solid rgba($white, 0.1);
+
+  & > .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__menu-toggle {
+    svg {
+      fill: currentColor;
+    }
+    display: none;
+    @include media-breakpoint-down(md) {
+      display: block;
+    }
+    margin-right: 15px;
+  }
+
+  &__logo img {
+    height: 40px;
+  }
+
+  &__buttons {
+  }
+
+  &__menu {
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: 32px;
+    color: rgba($primary, 0.6);
+    .menu__item {
+      &--active {
+        color: $primary-darken;
+      }
+
+      & > a {
+        padding: 0 32px;
+      }
+    }
+  }
+
+  &__button {
+    padding: 17px 57px;
+    font-weight: 700;
+    border-radius: 100px;
+    display: inline-block;
+    background-color: $primary;
+    color: $white;
+    font-weight: 700;
+    font-size: 20px;
+
+    &:hover {
+      background-color: darken($primary, 10%);
+      color: $white;
+    }
+   
+  }
+}

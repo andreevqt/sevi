@@ -1,0 +1,40 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+);
+
+$h1-font-size: 3.75rem;
+$h2-font-size: 2.1875rem;
+$h3-font-size: 1.875rem;
+$h4-font-size: 0.875rem;
+
+$headings-font-weight: 700;
+$headings-line-height: 1.4;
+$headings-font-family: "Playfair Display", serif;
+
+$orange: #fc6a42;
+$pink: #f5989d;
+$purple: #615f7d;
+$purple-light: #bd8cbf;
+$green: #82ca9c;
+
+$primary: #723182;
+$primary-darken: #44224b;
+
+$font-size-base: 1.25rem;
+$line-height-base: 1.75;
+
+$header-color: #e1e1e1;
+$text-muted: #67676d;
+$body-color: #44224b;
+$yellow-light: #fcec64;
+
+$footer-bg: #192431;
+$footer-color: #f6f7fa;
+$footer-color-info: #57697f;
+$font-family-base: "Nunito Sans", sans-serif;
+
+
+$hr-border-color: rgba($primary-darken, 0.15);

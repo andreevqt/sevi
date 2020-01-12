@@ -1,0 +1,34 @@
+.menu {
+  @extend %reset-list;
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &__item {
+    &--has-dropdown {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        right: 10px;
+        top: calc(50% - 7px / 2);
+        @extend %background-image;
+        background-image: url("../images/caret-down.png");
+        content: "";
+        width: 8px;
+        height: 5px;
+      }
+    }
+    &:not(:last-of-type) {
+    }
+  }
+
+  a {
+    display: block;
+  }
+
+  .active {
+    color: $white;
+  }
+}

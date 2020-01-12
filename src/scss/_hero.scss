@@ -1,0 +1,86 @@
+.hero {
+  position: relative;
+  z-index: 1;
+  padding-top: 200px;
+  height: 800px;
+  margin-bottom: 130px;
+
+  &__dots-top {
+    position: absolute;
+    top: 150px;
+    left: 20%;
+  }
+
+  &__dots-bottom {
+    position: absolute;
+    left: 20px;
+    bottom: 100px;
+  }
+
+  &__image-top {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    width: 40%;
+  }
+
+  &__triangle {
+  }
+
+  &__image {
+    width: auto;
+    height: calc(100% - 200px);
+    position: absolute;
+    z-index: -1;
+    right: 0;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+  }
+
+  &__subheading {
+    font-size: 20px;
+    margin-bottom: 80px;
+    color: rgba($primary, 0.6);
+  }
+
+  &__search {
+    position: relative;
+    line-height: 1;
+    input {
+      background-color: #f4eef5;
+      padding: 30px 70px 30px 65px;
+      border: none;
+      width: 100%;
+      font-size: 20px;
+      border-radius: 100px;
+      &::placeholder {
+        color: rgba($primary, 0.4);
+      }
+    }
+
+    &::before {
+      @extend %background-image;
+      content: "";
+      background-image: url("../images/search_icon.png");
+      position: absolute;
+      top: calc(50% - 36px / 2);
+      width: 36px;
+      height: 36px;
+      right: 32px;
+    }
+  }
+
+  &__left {
+    padding-top: 40px;
+  }
+
+  &__right {
+    position: static;
+    padding-left: 40px;
+  }
+}

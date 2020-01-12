@@ -1,0 +1,82 @@
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  $parent: &;
+
+  &__heading {
+    color: #fdc800;
+    font-size: 52px;
+    margin-bottom: 65px;
+
+    span {
+      color: $primary-darken;
+    }
+  }
+
+  &--resources {
+    #{$parent}__heading {
+      margin-bottom: 144px;
+    }
+  }
+
+  &--libraries {
+    position: relative;
+    #{$parent}__image {
+      position: static;
+      &::before {
+        background-image: url("../images/picture_libraries.svg");
+      }
+    }
+  }
+
+  &--create-library {
+    position: relative;
+    #{$parent}__button {
+      margin-right: 30px;
+    }
+    #{$parent}__image {
+      position: static;
+      &::before {
+        background-image: url("../images/picture_app.svg");
+        background-position: right bottom;
+        right: 0;
+        width: 50%;
+        left: auto;
+      }
+    }
+    #{$parent}__phone {
+      @extend %background-image;
+      background-image: url('../images/phone.png');
+      background-size: contain;
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+      padding: 12px 15px 12px 15px;
+      
+      img {
+        height: 500px;
+        width: auto;
+      }
+    }
+  }
+
+  &__image {
+    position: static;
+    &::before {
+      @extend %background-image;
+      background-size: contain;
+      background-position: left;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      content: "";
+    }
+  }
+
+  &__text {
+    color: rgba($primary, 0.6);
+    margin-bottom: 64px;
+  }
+}

@@ -1,0 +1,37 @@
+.button {
+  background-color: $primary;
+  font-weight: 700;
+  padding: 17px 57px;
+  border-radius: 100px;
+  display: inline-block;
+  background-color: $primary;
+  color: $white;
+  font-size: 20px;
+  &:hover {
+    background-color: darken($primary, 10%);
+    color: $white;
+  }
+}
+
+.button-ext {
+  display: inline-block; 
+  @extend %background-image;
+
+  &--amazon {
+    background-image: url("../images/buy-amazon.png");
+    width: 188px;
+    height: 67px;
+  }
+
+  &--google {
+    background-image: url("../images/google-play.png");
+    height: 63px;
+    width: 213px;
+  }
+
+  &--apple {
+    background-image: url('../images/app-store.png');
+    width: 195px;
+    height: 63px;
+  }
+}
