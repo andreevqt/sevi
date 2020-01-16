@@ -3,6 +3,26 @@
   padding-bottom: 130px;
   $parent: &;
 
+
+  &--hero {
+    #{$parent}__image {
+      position: static;
+      &::before {
+        z-index: -1;
+        width: 60%;
+        background-position: right;
+        background-image: url("../images/picture_app_top.svg");
+        right: 0;
+        left: auto;
+      }
+    }
+  }
+
+  &--no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   &__heading {
     color: #fdc800;
     font-size: 52px;
