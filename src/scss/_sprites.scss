@@ -1,0 +1,35 @@
+$step: 16px;
+
+@function getCoords($pos: 1 ) {
+  @return -$step * $pos;
+}
+
+.sprite {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-image: url("../images/sprites.png");
+  width: 16px;
+  height: 16px;
+  $step: 16px;
+
+  &--linkedin {
+    background-position: getCoords(0) 0px;
+  }
+
+  &--twitter {
+    background-position: getCoords(1) 0px;
+  }
+
+  &--youtube {
+    background-position: getCoords(2) 0px;
+  }
+
+  &--facebook {
+    background-position: getCoords(3) 0px;
+  }
+
+  &--insta {
+    background-position: getCoords(4) 0px;
+  }
+}

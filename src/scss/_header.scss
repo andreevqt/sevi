@@ -7,8 +7,6 @@
   height: 200px;
   line-height: 1;
   $parent: &;
-  font-size: 20px;
-
   border-bottom: 1px solid rgba($white, 0.1);
 
   & > .container {

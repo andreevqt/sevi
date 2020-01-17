@@ -22,6 +22,7 @@
 
   &__copyright {
     color: rgba($primary-darken, 0.6);
+    margin-right: 50px;
   }
 
   hr {
@@ -29,9 +30,28 @@
     margin-bottom: 65px;
   }
 
+  &__bottom {
+    margin-bottom: 65px;
+  }
+
   &__social {
+    position: relative;
     width: 36px;
     height: 36px;
-    
+    line-height: 36px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: $social-bg;
+    margin-right: 15px;
+
+    .sprite {
+      position: absolute;
+      top: calc(50% - 16px /2);
+      left: calc(50% - 16px /2);
+    }
+    &::hover {
+      background-color: darken($social-bg, 10%);
+    }
   }
 }
