@@ -1,5 +1,11 @@
 import './bootstrap';
 import 'bootstrap/js/dist/dropdown';
+import AOS from 'aos';
+
+AOS.init({
+  delay: 200,
+  duration: 1500,
+});
 
 $(() => {
   const body = $('body');
