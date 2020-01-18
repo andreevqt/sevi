@@ -92,7 +92,8 @@
   }
 
   @include media-breakpoint-down(sm) {
-    height: 100px;
+    height: 64px;
+    background-color: $white;
   }
 }
 
