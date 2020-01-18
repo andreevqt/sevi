@@ -97,6 +97,7 @@
 }
 
 .mobile-menu-is-shown {
+  overflow: hidden;
   @include media-breakpoint-down(sm) {
     .header__menu {
       position: relative;
