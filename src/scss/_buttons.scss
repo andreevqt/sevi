@@ -7,9 +7,35 @@
   background-color: $primary;
   color: $white;
   font-size: 20px;
+  border: none;
   &:hover {
     background-color: darken($primary, 10%);
     color: $white;
+  }
+
+  &--to-top {
+    $size: 48px;
+    display: none;
+    padding: 0;
+    position: fixed;
+    z-index: 9999;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    color: $primary-darken;
+    width: $size;
+    height: $size;
+    line-height: $size;
+    background-color: $white;
+    box-shadow: $box-shadow-to-top;
+    border: 1px solid $border-color;
+    svg {
+      margin-bottom: 4px;
+    }
+    &:hover {
+      color: $primary-darken;
+      background-color: $white;
+    }
   }
 }
 

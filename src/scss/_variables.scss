@@ -13,6 +13,8 @@ $grid-breakpoints: (
   xl: 1200px
 ) !default;
 
+
+$black: #000;
 $primary: #723182;
 $primary-darken: #44224b;
 
@@ -41,3 +43,4 @@ $yellow-light: #fcec64;
 $font-family-base: "Nunito Sans", sans-serif;
 $social-bg: #723182;
 $hr-border-color: rgba($primary-darken, 0.15);
+$box-shadow-to-top: rgba($black, 0.1) 0px 2px 0px 0px, rgba($black, 0.04) 0px 0px 0px 0.5px;

@@ -11,4 +11,17 @@ $(() => {
   closeMenu.click((e) => {
     body.removeClass('mobile-menu-is-shown');
   });
+  const handleToTop = () => {
+    const offset = 100;
+    if (document.body.scrollTop > offset || document.documentElement.scrollTop > offset) {
+      body.addClass('to-top');
+    } else {
+      body.removeClass('to-top');
+    }
+  }
+  handleToTop();
+  $(window).scroll(handleToTop);
+  $('.button--to-top').click((e) => {
+    $('html,body').animate({ scrollTop: 0 }, 'slow');
+  })
 });
