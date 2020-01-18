@@ -16,6 +16,10 @@
   }
 
   &__menu-toggle {
+    padding: 15px;
+    background-color: $white;
+    border: none;
+    color: $primary-darken;
     svg {
       fill: currentColor;
     }
@@ -23,7 +27,6 @@
     @include media-breakpoint-down(md) {
       display: block;
     }
-    margin-right: 15px;
   }
 
   &__logo img {
@@ -56,8 +59,6 @@
     @include media-breakpoint-down(sm) {
       display: none;
     }
-
-
   }
 
   &__button {
@@ -78,5 +79,38 @@
 
   @include media-breakpoint-down(sm) {
     height: 100px;
+  }
+}
+
+.mobile-menu-is-shown {
+  @include media-breakpoint-down(sm) {
+    .header__menu {
+      padding: 20px;
+      align-items: stretch;
+      display: flex;
+      flex-direction: column;
+      background-color: $white;
+      position: fixed;
+      margin-right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow-y: auto;
+      .menu__item {
+        a {
+          padding: 20px;
+        }
+      }
+    }
+
+    .header__buttons {
+      margin-top: auto;
+      margin-left: 0;
+      text-align: center;
+      .button {
+        display: inline-block;
+      }
+    }
   }
 }

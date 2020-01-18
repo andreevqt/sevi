@@ -59,9 +59,20 @@ a {
   margin-top: 20px;
   box-shadow: $box-shadow;
   border: none;
+  
+  @include media-breakpoint-down(sm) {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 0;
+    box-shadow: none;
+    position: static;
+    width: 100%;
+    font-size: 16px;
+  }
 }
 
 .dropdown-item {
+  color: $body-color;
   padding: 10px 15px;
 }
 

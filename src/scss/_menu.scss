@@ -18,6 +18,11 @@
         content: "";
         width: 8px;
         height: 5px;
+
+        @include media-breakpoint-down(sm) {
+          top: calc(28px - 7px / 2);
+        }
+
       }
     }
     &:not(:last-of-type) {
