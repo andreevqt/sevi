@@ -5,8 +5,6 @@ $container-max-widths: (
   xl: 1200px
 );
 
-
-
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -15,6 +13,8 @@ $grid-breakpoints: (
   xl: 1200px
 ) !default;
 
+$primary: #723182;
+$primary-darken: #44224b;
 
 $h1-font-size: 3.75rem;
 $h2-font-size: 2.1875rem;
@@ -24,13 +24,11 @@ $h4-font-size: 0.875rem;
 $headings-font-weight: 700;
 $headings-line-height: 1.4;
 $headings-font-family: "Playfair Display", serif;
+$headings-color: $primary-darken;
 
 $orange: #fc6a42;
 $pink: #f5989d;
 $green: #82ca9c;
-
-$primary: #723182;
-$primary-darken: #44224b;
 
 $font-size-base: 1.25rem;
 $line-height-base: 1.75;
@@ -41,7 +39,5 @@ $body-color: rgba($primary, 0.6);
 $yellow-light: #fcec64;
 
 $font-family-base: "Nunito Sans", sans-serif;
-
 $social-bg: #723182;
-
 $hr-border-color: rgba($primary-darken, 0.15);
