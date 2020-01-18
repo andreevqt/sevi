@@ -7,6 +7,8 @@ $(() => {
   menuToggle.click((e) => {
     body.addClass('mobile-menu-is-shown');
   })
-
-  // dropdown
+  const closeMenu = $('.header__close');
+  closeMenu.click((e) => {
+    body.removeClass('mobile-menu-is-shown');
+  });
 });

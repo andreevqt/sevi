@@ -77,6 +77,20 @@
     }
   }
 
+  &__close {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: $primary-darken;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    @include media-breakpoint-down(sm) {
+      display: inline-block;
+    }
+  }
+
   @include media-breakpoint-down(sm) {
     height: 100px;
   }
@@ -85,7 +99,8 @@
 .mobile-menu-is-shown {
   @include media-breakpoint-down(sm) {
     .header__menu {
-      padding: 20px;
+      position: relative;
+      padding: 45px 20px 20px 20px;
       align-items: stretch;
       display: flex;
       flex-direction: column;
