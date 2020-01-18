@@ -22,37 +22,51 @@
           <img src="images/sevi-logo.svg" alt="Sevi">
         </a>
         <div class="ml-auto d-flex align-items-center">
-          <ul class="header__menu menu">
-            <li class="menu__item menu__item--active"><a href="#">Home</a></li>
-            <li class="menu__item menu__item--has-dropdown dropdown">
-              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse</a>
+          <button class="header__menu-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 32 32">
+              <path d="M0 3h32v3H0zM0 14.5h32v3H0zM0 26h32v3H0z"></path>
+            </svg>
+          </button>
+          <div class="header__menu menu">
+            <div class="menu__item menu__item--active"><a href="#">Home</a></div>
+            <div class="menu__item menu__item--has-dropdown dropdown">
+              <a href="#" data-toggle="dropdown" class="menu__dropdown-toggle" data-display="static"
+                aria-haspopup="true" aria-expanded="false">Browse</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Item 1</a>
                 <a class="dropdown-item" href="#">Item 2</a>
                 <a class="dropdown-item" href="#">Item 3</a>
               </div>
-            </li>
-            <li class="menu__item menu__item--has-dropdown dropdown">
-              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My books</a>
+            </div>
+            <div class="menu__item menu__item--has-dropdown dropdown">
+              <a href="#" data-toggle="dropdown" class="menu__dropdown-toggle" data-display="static"
+                aria-haspopup="true" aria-expanded="false">My books</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Item 1</a>
                 <a class="dropdown-item" href="#">Item 2</a>
                 <a class="dropdown-item" href="#">Item 3</a>
               </div>
-            </li>
-            <li class="menu__item menu__item--has-dropdown dropdown">
-              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+            </div>
+            <div class="menu__item menu__item--has-dropdown dropdown">
+              <a href="#" data-toggle="dropdown" class="menu__dropdown-toggle" data-display="static"
+                aria-haspopup="true" aria-expanded="false">More</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Item 1</a>
                 <a class="dropdown-item" href="#">Item 2</a>
                 <a class="dropdown-item" href="#">Item 3</a>
               </div>
-            </li>
-            <li class="header__buttons">
+            </div>
+            <div class="header__buttons">
               <a href="#" class="button">Login</a>
-            </li>
-            <!-- !menu -->
-          </ul>
+            </div>
+            <button type="button" class="header__close">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z">
+                </path>
+              </svg>
+            </button>
+          </div>
 
         </div>
 
@@ -507,8 +521,8 @@
             <h3 class="section__heading heading heading--create-library">Create <span>your own <br> mobile
                 library</span></h3>
             <p class="section__text">
-              Create your own library on your phone easily with Sevi 
-              mobile app. Get it free on Google Play Store for android 
+              Create your own library on your phone easily with Sevi
+              mobile app. Get it free on Google Play Store for android
               and Download on the App Store for iOS for free.
             </p>
             <div class="section__buttons">
