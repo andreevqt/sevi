@@ -15,21 +15,38 @@
     font-size: 36px;
     font-family: "Nunito Sans", sans-serif;
     line-height: 1.75;
-    margin-right: 100px;
+    /* margin-right: 100px; */
     margin-bottom: 0;
-    flex: 0 0 40%;
+    /* flex: 0 0 40%; */ 
+
+    @include media-breakpoint-down(sm) {
+      font-size: 20px;
+      margin-right: 0;
+    }
   }
 
   &__rating {
     margin-top: 15px;
+    @include media-breakpoint-down(sm) {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
   }
 
   &__star {
     fill: #fdc800;
     margin-right: 16px;
+    width: 32px;
+    height: 32px;
 
     &--last {
       margin-right: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-right: 4px;
+      width: 20px;
+      height: 20px;
     }
   }
 
@@ -38,11 +55,17 @@
     font-weight: 700;
     font-size: 40px;
     margin-left: auto;
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+    }
   }
 
   &__header {
     padding: 70px;
-    display: flex;
+    // display: flex;
+    @include media-breakpoint-down(sm) {
+      padding: 20px;
+    }
   }
 
   &__inner-wrapper {
@@ -54,6 +77,9 @@
   &__inner {
     padding: 0 70px 70px 70px;
     display: flex;
+    @include media-breakpoint-down(sm) {
+      padding: 0 20px 20px 20px;
+    }
   }
 
   &__description {
@@ -65,6 +91,10 @@
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 20px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 20px;
+    }
   }
 
   &__middot {
@@ -75,18 +105,30 @@
   &__buy {
     display: inline-block;
     @extend %background-image;
-    background-image: url('../images/buy-amazon.png');
+    background-image: url("../images/buy-amazon.png");
     width: 188px;
     height: 67px;
   }
 
   &__preview {
-  padding-left: 72px;
+    padding-left: 72px;
     padding-right: 72px;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+      margin-bottom: 20px;
+      img {
+        max-width: 70%;
+        height: auto;
+      }
+    }
   }
 
   &__id {
     margin-right: 28px;
+    @include media-breakpoint-down(sm) {
+      margin-right: 10px;
+    }
   }
 
   &__read-more {

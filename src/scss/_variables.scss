@@ -1,9 +1,20 @@
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
+  sm: 600px,
+  md: 920px,
+  lg: 1100px,
   xl: 1200px
 );
+
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 900px,
+  lg: 1070px,
+  xl: 1200px
+) !default;
+
 
 $h1-font-size: 3.75rem;
 $h2-font-size: 2.1875rem;

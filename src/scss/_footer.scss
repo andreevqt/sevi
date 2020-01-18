@@ -4,14 +4,24 @@
   &__title {
     font-weight: 600;
     margin-bottom: 40px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 10px;
+    }
   }
 
   &__logo {
     display: inline-block;
     color: $white;
+    margin-bottom: 40px;
     img {
-      height: 39px;
+      height: 20px;
       width: auto;
+    }
+  }
+
+  &__col {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 30px;
     }
   }
 
@@ -22,12 +32,18 @@
 
   &__copyright {
     color: rgba($primary-darken, 0.6);
+    margin-bottom: 20px;
     margin-right: 50px;
+    
   }
 
   hr {
     margin-top: 65px;
     margin-bottom: 65px;
+    @include media-breakpoint-down(sm) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
   }
 
   &__bottom {
@@ -50,8 +66,12 @@
       top: calc(50% - 16px /2);
       left: calc(50% - 16px /2);
     }
-    &::hover {
+    &:hover {
       background-color: darken($social-bg, 10%);
     }
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 20px;
   }
 }

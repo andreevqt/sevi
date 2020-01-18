@@ -2,8 +2,8 @@
   position: relative;
   z-index: 1;
   padding-top: 200px;
-  height: 800px;
-  margin-bottom: 130px;
+  //height: 800px;
+  // margin-bottom: 130px;
 
   &__dots-top {
     position: absolute;
@@ -11,18 +11,19 @@
     left: 20%;
   }
 
+  &__row {
+    @include media-breakpoint-down(sm) {
+      flex-direction: column-reverse;
+    }
+  }
+
   &__dots-bottom {
     position: absolute;
     left: 20px;
     bottom: 100px;
-  }
-
-  &__image-top {
-    position: absolute;
-    z-index: -1;
-    right: 0;
-    top: 0;
-    width: 40%;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
   }
 
   &__triangle {
@@ -37,15 +38,18 @@
   } */
 
   &__title {
-    font-size: 48px;
-    font-weight: 700;
+    /* // font-size: 48px;
+    font-weight: 700; */
     font-family: "Playfair Display", serif;
   }
 
   &__subheading {
-    font-size: 20px;
+    // font-size: 20px;
     margin-bottom: 80px;
     color: rgba($primary, 0.6);
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 40px;
+    }
   }
 
   &__search {
@@ -56,31 +60,55 @@
       padding: 30px 70px 30px 65px;
       border: none;
       width: 100%;
-      font-size: 20px;
+      // font-size: 20px;
       border-radius: 100px;
       &::placeholder {
         color: rgba($primary, 0.4);
       }
+
+      @include media-breakpoint-down(sm) {
+        padding-left: 30px;
+        /* padding-left: 20px;
+        font-size: 15px; */
+      }
     }
 
     &::before {
+      $size: 36px;
       @extend %background-image;
       content: "";
       background-image: url("../images/search_icon.png");
       position: absolute;
-      top: calc(50% - 36px / 2);
-      width: 36px;
-      height: 36px;
+      top: calc(50% - #{$size} / 2);
+      width: $size;
+      height: $size;
       right: 32px;
+      @include media-breakpoint-down(sm) {
+        $size: 24px;
+        width: $size;
+        height: $size;
+        top: calc(50% - #{$size} / 2 );
+      }
     }
+
+    
   }
 
   &__left {
-    padding-top: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include media-breakpoint-down(sm) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
   }
 
   &__right {
-    position: static;
-    padding-left: 40px;
+    // position: static;
+    // padding-left: 40px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 100px;
   }
 }

@@ -16,188 +16,266 @@
 
 <body>
   <div class="content-wrapper">
-  <header class="header">
-    <div class="container ">
-      <a href="#" class="header__logo">
-        <img src="/images/sevi-logo.svg" alt="Sevi">
-      </a>
-      <div class="ml-auto d-flex align-items-center">
-        <ul class="header__menu menu">
-          <li class="menu__item menu__item--active"><a href="#">Home</a></li>
-          <li class="menu__item menu__item--has-dropdown dropdown">
-            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Item 1</a>
-              <a class="dropdown-item" href="#">Item 2</a>
-              <a class="dropdown-item" href="#">Item 3</a>
-            </div>
-          </li>
-          <li class="menu__item menu__item--has-dropdown dropdown">
-            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My books</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Item 1</a>
-              <a class="dropdown-item" href="#">Item 2</a>
-              <a class="dropdown-item" href="#">Item 3</a>
-            </div>
-          </li>
-          <li class="menu__item menu__item--has-dropdown dropdown">
-            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Item 1</a>
-              <a class="dropdown-item" href="#">Item 2</a>
-              <a class="dropdown-item" href="#">Item 3</a>
-            </div>
-          </li>
-          <!-- !menu -->
-        </ul>
-        <div class="header__buttons">
-          <a href="#" class="button">Login</a>
-        </div>
-      </div>
+    <header class="header">
+      <div class="container ">
+        <a href="#" class="header__logo">
+          <img src="/images/sevi-logo.svg" alt="Sevi">
+        </a>
+        <div class="ml-auto d-flex align-items-center">
+          <ul class="header__menu menu">
+            <li class="menu__item menu__item--active"><a href="#">Home</a></li>
+            <li class="menu__item menu__item--has-dropdown dropdown">
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Item 1</a>
+                <a class="dropdown-item" href="#">Item 2</a>
+                <a class="dropdown-item" href="#">Item 3</a>
+              </div>
+            </li>
+            <li class="menu__item menu__item--has-dropdown dropdown">
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My books</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Item 1</a>
+                <a class="dropdown-item" href="#">Item 2</a>
+                <a class="dropdown-item" href="#">Item 3</a>
+              </div>
+            </li>
+            <li class="menu__item menu__item--has-dropdown dropdown">
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Item 1</a>
+                <a class="dropdown-item" href="#">Item 2</a>
+                <a class="dropdown-item" href="#">Item 3</a>
+              </div>
+            </li>
+            <li class="header__buttons">
+              <a href="#" class="button">Login</a>
+            </li>
+            <!-- !menu -->
+          </ul>
 
-    </div>
-  </header>
-  <section class="hero section section--hero">
-    <!-- <div class="hero__image-top">
+        </div>
+
+      </div>
+    </header>
+    <section class="hero section section--hero">
+      <!-- <div class="hero__image-top">
       <img src="/images/triangle.svg" class="hero__triangle">
       <img src="/images/dots-top.png" class="hero__dots-top" alt="">
     </div> -->
-    <img src="/images/dots-bottom.png" class="hero__dots-bottom" alt="">
-    <div class="container h-100">
-      <div class="row h-100">
-        <div class="hero__left col-md-6 d-flex flex-column">
-          <h2 class="hero__title mb-4">Today's research,
-            tomorrow's innovation</h2>
-          <p class="hero__subheading">
-            Accelerating research discovery to shape a better future
-          </p>
-          <div class="hero__search">
-            <input type="search" name="s" id="search" placeholder="Seacrh books, articles, keywords...">
+      <img src="/images/dots-bottom.png" class="hero__dots-bottom" alt="">
+      <div class="container">
+        <div class="row hero__row">
+          <div class="hero__left col-md-6 d-flex flex-column">
+            <h2 class="hero__title heading heading--hero mb-4 heading-sm">Today's research,
+              tomorrow's innovation</h2>
+            <p class="hero__subheading">
+              Accelerating research discovery to shape a better future
+            </p>
+            <div class="hero__search">
+              <input type="search" name="s" id="search" placeholder="Seacrh books, articles, keywords...">
+            </div>
+
+          </div>
+          <div class="hero__right col-md-6 section__image section__image--hero">
+            <!-- <img class="hero__image" src="/images/hero-picture.svg" alt=""> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--resources">
+      <div class="container">
+        <h3 class="section__heading heading heading--resources text-center">Our <span>Resources</span></h3>
+        <div class="row">
+
+          <div class="col-md-3 col-sm-6 resource">
+            <img src="/images/researchers.png" class="resource__icon">
+            <h4 class="resource__heading heading heading--resource">Researchers</h4>
+            <p class="resource__text">
+              Register online <br>
+              Discover tools and manage alerts <br>
+              Learn about how to access
+            </p>
+          </div>
+
+          <div class="col-md-3 col-sm-6 resource">
+            <img src="/images/librarian.png" class="resource__icon">
+            <h4 class="resource__heading heading heading--resource">Librarian</h4>
+            <p class="resource__text">
+              Manage your account <br>
+              View products and solutions <br>
+              Find resources and support
+            </p>
+          </div>
+
+          <div class="col-md-3 col-sm-6 resource">
+            <img src="/images/sociaeties.png" class="resource__icon">
+            <h4 class="resource__heading heading heading--resource">Societies</h4>
+            <p class="resource__text">
+              Publish with Wiley<br>
+              Explore our resource library<br>
+              Learn about topics and trends
+
+            </p>
+
+          </div>
+
+          <div class="col-md-3 col-sm-6 resource">
+            <img src="/images/authors.png" class="resource__icon">
+            <h4 class="resource__heading heading heading--resource">Authors</h4>
+            <p class="resource__text">
+              Submit a paper <br>
+              Track your article <br>
+              Learn about Open Access
+            </p>
           </div>
 
         </div>
-        <div class="hero__right col-md-6 section__image">
-          <!-- <img class="hero__image" src="/images/hero-picture.svg" alt=""> -->
+      </div>
+
+      <!-- !resources -->
+    </section>
+
+    <section class="section section--libraries">
+
+      <div class="container section__container">
+        <div class="row">
+          <div class="col-md-6 section__image section__image--libraries">
+          </div>
+
+          <div class="pl-md-5 col-md-6">
+            <h3 class="section__heading heading heading--libraries">Our <span>libraries</span></h3>
+            <p class="section__text">
+              Your reading list is a good place to start, but you will be
+              expected to read more widely too. Use Sevi to search for information on your topic, and to find books,
+              journal
+              articles and other materials in the Library.
+            </p>
+            <div class="d-flex justify-content-start justify-content-center">
+              <a href="#" class="button">Learn more</a>
+            </div>
+          </div>
+
+
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section section--resources">
-    <div class="container">
-      <h3 class="section__heading text-center">Our <span>Resources</span></h3>
-      <div class="row">
+    <section class="section section--best-sellers">
+      <div class="container">
+        <h3 class="section__heading heading heading--best-sellers text-center">Best seller <span>books</span></h3>
 
-        <div class="col-3 resource">
-          <img src="/images/researchers.png" class="resource__icon">
-          <h4 class="resource__heading">Researchers</h4>
-          <p class="resource__text">
-            Register online <br>
-            Discover tools and manage alerts <br>
-            Learn about how to access
-          </p>
-        </div>
-
-        <div class="col-3 resource">
-          <img src="/images/librarian.png" class="resource__icon">
-          <h4 class="resource__heading">Librarian</h4>
-          <p class="resource__text">
-            Manage your account <br>
-            View products and solutions <br>
-            Find resources and support
-          </p>
-        </div>
-
-        <div class="col-3 resource">
-          <img src="/images/sociaeties.png" class="resource__icon">
-          <h4 class="resource__heading">Societies</h4>
-          <p class="resource__text">
-            Publish with Wiley<br>
-            Explore our resource library<br>
-            Learn about topics and trends
-
-          </p>
-
-        </div>
-
-        <div class="col-3 resource">
-          <img src="/images/authors.png" class="resource__icon">
-          <h4 class="resource__heading">Authors</h4>
-          <p class="resource__text">
-            Submit a paper <br>
-            Track your article <br>
-            Learn about Open Access
-          </p>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- !resources -->
-  </section>
-
-  <section class="section section--libraries">
-
-    <div class="container section__container">
-      <div class="row">
-        <div class="col-md-6 section__image">
-        </div>
-
-        <div class="pl-md-5 col-md-6">
-          <h3 class="section__heading">Our <span>libraries</span></h3>
-          <p class="section__text">
-            Your reading list is a good place to start, but you will be
-            expected to read more widely too. Use Sevi to search for information on your topic, and to find books,
-            journal
-            articles and other materials in the Library.
-          </p>
-          <a href="#" class="button">Learn more</a>
-        </div>
-
-
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--best-sellers">
-    <div class="container">
-      <h3 class="section__heading text-center">Best seller <span>books</span></h3>
-
-      <div class="best-sellers">
-        <div class="best-seller">
-          <div class="best-seller__header">
-            <h5 class="best-seller__title">
-              <span class="best-seller__id">1.</span> A tale of two cities
-            </h5>
-            <div class="best-seller__rating">
-              <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                viewBox="0 0 24 24">
-                <path
-                  d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-              </svg>
-              <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                viewBox="0 0 24 24">
-                <path
-                  d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-              </svg>
-              <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                viewBox="0 0 24 24">
-                <path
-                  d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-              </svg>
-              <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                viewBox="0 0 24 24">
-                <path
-                  d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-              </svg>
-              <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                viewBox="0 0 24 24">
-                <path
-                  d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524v-12.005zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z" />
-              </svg>
+        <div class="best-sellers">
+          <div class="best-seller">
+            <div class="best-seller__header">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h5 class="best-seller__title">
+                    <span class="best-seller__id">1.</span> A tale of two cities
+                  </h5>
+                </div>
+                <div class="col-sm-4">
+                  <div class="best-seller__rating">
+                    <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                    </svg>
+                    <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                    </svg>
+                    <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                    </svg>
+                    <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                    </svg>
+                    <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524v-12.005zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="col-sm-auto d-sm-flex">
+                  <div class="best-seller__price ml-auto">$18.00</div>
+                </div>
+              </div>
             </div>
 
-            <div class="best-seller__price">$18.00</div>
+            <div class="best-seller__inner-wrapper">
+              <div class="best-seller__inner row">
+                <div class="best-seller__preview col-sm-auto text-center">
+                  <img src="/images/book-preview.png">
+                </div>
+                <div class="col">
+                  <div class="best-seller__meta">Charles Dickens <span class="best-seller__middot">&middot;</span>
+                    Copies
+                    Sold: 75 million</div>
+                  <p class="best-seller__description">
+                    Dickens's classic story of the French Revolution. While the turmoil
+                    of the Revolution rages around them, the lives of the members of the Evremonde family are profoundly
+                    affected by the actions of one man – Sydney Carton... <a href="#"
+                      class="best-seller__read-more">read
+                      more</a>
+                  </p>
+                  <a href="#" class="button-ext button-ext--amazon"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ! best-seller -->
+        </div>
+
+
+        <div class="best-seller">
+          <div class="best-seller__header">
+            <div class="row">
+              <div class="col-sm-6">
+                <h5 class="best-seller__title">
+                  <span class="best-seller__id">2.</span> Lord of the rings
+                </h5>
+              </div>
+              <div class="col-sm-4">
+                <div class="best-seller__rating">
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="col-sm-auto d-sm-flex">
+                <div class="best-seller__price">$21.00</div>
+              </div>
+            </div>
           </div>
 
           <div class="best-seller__inner-wrapper">
@@ -206,13 +284,13 @@
                 <img src="/images/book-preview.png">
               </div>
               <div>
-                <div class="best-seller__meta">Charles Dickens <span class="best-seller__middot">&middot;</span> Copies
-                  Sold: 75 million</div>
+                <div class="best-seller__meta">J.R.R Tolkien <span class="best-seller__middot">&middot;</span> Copies
+                  Sold: 150 million</div>
                 <p class="best-seller__description">
-                  Dickens's classic story of the French Revolution. While the turmoil
-                  of the Revolution rages around them, the lives of the members of the Evremonde family are profoundly
-                  affected by the actions of one man – Sydney Carton... <a href="#" class="best-seller__read-more">read
-                    more</a>
+                  The Lord of the Rings is an epic high-fantasy novel written by English author J. R. R. Tolkien. The
+                  story began as a sequel to Tolkien's 1937
+                  fantasy novel The Hobbit, but eventually developed into... <a href="#"
+                    class="best-seller__read-more">read more</a>
                 </p>
                 <a href="#" class="button-ext button-ext--amazon"></a>
               </div>
@@ -220,343 +298,307 @@
           </div>
         </div>
         <!-- ! best-seller -->
+
+        <div class="best-seller">
+          <div class="best-seller__header">
+            <div class="row">
+              <div class="col-sm-6">
+                <h5 class="best-seller__title">
+                  <span class="best-seller__id">3.</span> The Little Princess
+                </h5>
+              </div>
+              <div class="col-sm-4">
+                <div class="best-seller__rating">
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524-4.721 2.525.942-5.27-3.861-3.71 5.305-.733 2.335-4.817zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="col-sm-auto d-sm-flex">
+                <div class="best-seller__price ml-auto">$11.00</div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="best-seller__inner-wrapper">
+            <div class="best-seller__inner row">
+              <div class="best-seller__preview col-sm-auto text-center">
+                <img src="/images/book-preview.png">
+              </div>
+              <div class="col">
+                <div class="best-seller__meta">J.R.R Tolkien <span class="best-seller__middot">&middot;</span> Copies
+                  Sold: 150 million</div>
+                <p class="best-seller__description">
+                  The Lord of the Rings is an epic high-fantasy novel written by English author J. R. R. Tolkien. The
+                  story began as a sequel to Tolkien's 1937
+                  fantasy novel The Hobbit, but eventually developed into... <a href="#"
+                    class="best-seller__read-more">read more</a>
+                </p>
+                <a href="#" class="button-ext button-ext--amazon"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ! best-seller -->
+
+        <div class="best-seller">
+          <div class="best-seller__header">
+            <div class="row">
+              <div class="col-sm-6">
+                <h5 class="best-seller__title">
+                  <span class="best-seller__id">4.</span> The Hobbit
+                </h5>
+              </div>
+              <div class="col-sm-4">
+                <div class="best-seller__rating">
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524-4.721 2.525.942-5.27-3.861-3.71 5.305-.733 2.335-4.817zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="col-sm-auto d-sm-flex">
+                <div class="best-seller__price ml-auto">$20.00</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="best-seller__inner-wrapper">
+            <div class="best-seller__inner row">
+              <div class="best-seller__preview col-sm-auto text-center">
+                <img src="/images/book-preview.png">
+              </div>
+              <div class="col">
+                <div class="best-seller__meta">J.R.R Tolkien <span class="best-seller__middot">&middot;</span> Copies
+                  Sold: 150 million</div>
+                <p class="best-seller__description">
+                  The Lord of the Rings is an epic high-fantasy novel written by English author J. R. R. Tolkien. The
+                  story began as a sequel to Tolkien's 1937
+                  fantasy novel The Hobbit, but eventually developed into... <a href="#"
+                    class="best-seller__read-more">read more</a>
+                </p>
+                <a href="#" class="button-ext button-ext--amazon"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ! best-seller -->
+
+        <div class="best-seller">
+          <div class="best-seller__header">
+            <div class="row">
+              <div class="col-sm-6">
+                <h5 class="best-seller__title">
+                  <span class="best-seller__id">5.</span> Alice's adventures in wonderland
+                </h5>
+              </div>
+              <div class="col-sm-4">
+                <div class="best-seller__rating">
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                  </svg>
+                  <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524-4.721 2.525.942-5.27-3.861-3.71 5.305-.733 2.335-4.817zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="col-sm-auto d-sm-flex">
+                <div class="best-seller__price ml-auto">$12.00</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="best-seller__inner-wrapper">
+            <div class="best-seller__inner row">
+              <div class="best-seller__preview col-sm-auto text-center">
+                <img src="/images/book-preview.png">
+              </div>
+              <div class="col">
+                <div class="best-seller__meta">J.R.R Tolkien <span class="best-seller__middot">&middot;</span> Copies
+                  Sold: 150 million</div>
+                <p class="best-seller__description">
+                  The Lord of the Rings is an epic high-fantasy novel written by English author J. R. R. Tolkien. The
+                  story began as a sequel to Tolkien's 1937
+                  fantasy novel The Hobbit, but eventually developed into... <a href="#"
+                    class="best-seller__read-more">read more</a>
+                </p>
+                <a href="#" class="button-ext button-ext--amazon"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ! best-seller -->
+
+        <div class="d-flex   mt-sm-5 mt-1 justify-content-center">
+          <a href="#" class="button">Find More</a>
+        </div>
+
       </div>
+      <!-- !best-sellers -->
+    </section>
 
-
-      <div class="best-seller">
-        <div class="best-seller__header">
-          <h5 class="best-seller__title">
-            <span class="best-seller__id">2.</span> Lord of the rings
-          </h5>
-          <div class="best-seller__rating">
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-          </div>
-
-          <div class="best-seller__price">$21.00</div>
-        </div>
-
-        <div class="best-seller__inner-wrapper">
-          <div class="best-seller__inner">
-            <div class="best-seller__preview">
-              <img src="/images/book-preview.png">
-            </div>
-            <div>
-              <div class="best-seller__meta">J.R.R Tolkien <span class="best-seller__middot">&middot;</span> Copies
-                Sold: 150 million</div>
-              <p class="best-seller__description">
-                The Lord of the Rings is an epic high-fantasy novel written by English author J. R. R. Tolkien. The
-                story began as a sequel to Tolkien's 1937
-                fantasy novel The Hobbit, but eventually developed into... <a href="#"
-                  class="best-seller__read-more">read more</a>
-              </p>
-              <a href="#" class="button-ext button-ext--amazon"></a>
+    <section class="section section--create-library ">
+      <div class="container">
+        <div class="row  flex-row-sm  flex-row-sm flex-column-reverse">
+          <div class="col-md-6">
+            <h3 class="section__heading heading heading--create-library">Create <span>your own <br> mobile
+                library</span></h3>
+            <p class="section__text">
+              Create your own library on your phone easily with Sevi 
+              mobile app. Get it free on Google Play Store for android 
+              and Download on the App Store for iOS for free.
+            </p>
+            <div class="section__buttons">
+              <a href="#" class="section__button button-ext button-ext--google"></a>
+              <a href="#" class="section__button button-ext button-ext--apple"></a>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- ! best-seller -->
+          <div class="col-md-6" style="position: static;">
+            <div class="section__image section__image--library">
+              <div class="section__phone">
+                <img src="/images/app-design.png" alt="">
+              </div>
 
-      <div class="best-seller">
-        <div class="best-seller__header">
-          <h5 class="best-seller__title">
-            <span class="best-seller__id">3.</span> The Little Princess
-          </h5>
-          <div class="best-seller__rating">
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524-4.721 2.525.942-5.27-3.861-3.71 5.305-.733 2.335-4.817zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z" />
-            </svg>
-          </div>
-
-          <div class="best-seller__price">$11.00</div>
-        </div>
-
-        <div class="best-seller__inner-wrapper">
-          <div class="best-seller__inner">
-            <div class="best-seller__preview">
-              <img src="/images/book-preview.png">
-            </div>
-            <div>
-              <div class="best-seller__meta">J.R.R Tolkien <span class="best-seller__middot">&middot;</span> Copies
-                Sold: 150 million</div>
-              <p class="best-seller__description">
-                The Lord of the Rings is an epic high-fantasy novel written by English author J. R. R. Tolkien. The
-                story began as a sequel to Tolkien's 1937
-                fantasy novel The Hobbit, but eventually developed into... <a href="#"
-                  class="best-seller__read-more">read more</a>
-              </p>
-              <a href="#" class="button-ext button-ext--amazon"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ! best-seller -->
-
-      <div class="best-seller">
-        <div class="best-seller__header">
-          <h5 class="best-seller__title">
-            <span class="best-seller__id">4.</span> The Hobbit
-          </h5>
-          <div class="best-seller__rating">
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524-4.721 2.525.942-5.27-3.861-3.71 5.305-.733 2.335-4.817zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z" />
-            </svg>
-          </div>
-
-          <div class="best-seller__price">$20.00</div>
-        </div>
-
-        <div class="best-seller__inner-wrapper">
-          <div class="best-seller__inner">
-            <div class="best-seller__preview">
-              <img src="/images/book-preview.png">
-            </div>
-            <div>
-              <div class="best-seller__meta">J.R.R Tolkien <span class="best-seller__middot">&middot;</span> Copies
-                Sold: 150 million</div>
-              <p class="best-seller__description">
-                The Lord of the Rings is an epic high-fantasy novel written by English author J. R. R. Tolkien. The
-                story began as a sequel to Tolkien's 1937
-                fantasy novel The Hobbit, but eventually developed into... <a href="#"
-                  class="best-seller__read-more">read more</a>
-              </p>
-              <a href="#" class="button-ext button-ext--amazon"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ! best-seller -->
-
-      <div class="best-seller">
-        <div class="best-seller__header">
-          <h5 class="best-seller__title">
-            <span class="best-seller__id">5.</span> Alice's adventures in wonderland
-          </h5>
-          <div class="best-seller__rating">
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-            </svg>
-            <svg class="best-seller__star" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524-4.721 2.525.942-5.27-3.861-3.71 5.305-.733 2.335-4.817zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z" />
-            </svg>
-          </div>
-
-          <div class="best-seller__price">$12.00</div>
-        </div>
-
-        <div class="best-seller__inner-wrapper">
-          <div class="best-seller__inner">
-            <div class="best-seller__preview">
-              <img src="/images/book-preview.png">
-            </div>
-            <div>
-              <div class="best-seller__meta">J.R.R Tolkien <span class="best-seller__middot">&middot;</span> Copies
-                Sold: 150 million</div>
-              <p class="best-seller__description">
-                The Lord of the Rings is an epic high-fantasy novel written by English author J. R. R. Tolkien. The
-                story began as a sequel to Tolkien's 1937
-                fantasy novel The Hobbit, but eventually developed into... <a href="#"
-                  class="best-seller__read-more">read more</a>
-              </p>
-              <a href="#" class="button-ext button-ext--amazon"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ! best-seller -->
-
-      <div class="d-flex mt-5 justify-content-center">
-        <a href="#" class="button">Find More</a>
-      </div>
-
-    </div>
-    <!-- !best-sellers -->
-  </section>
-
-  <section class="section section--create-library ">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h3 class="section__heading">Create <span>your own <br> mobile library</span></h3>
-          <p class="section__text">
-            Create your own library on your phone easily with Sevi <br>
-            mobile app. Get it free on Google Play Store for android <br>
-            and Download on the App Store for iOS for free.
-          </p>
-          <div class="section__buttons">
-            <a href="#" class="section__button button-ext button-ext--google"></a>
-            <a href="#" class="section__button button-ext button-ext--apple"></a>
-          </div>
-        </div>
-        <div class="col-md-6" style="position: static;">
-          <div class="section__image">
-            <div class="section__phone">
-              <img src="/images/app-design.png" alt="">
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-
-    <div class="footer__top container">
-      <div class="row">
-        <div class="col-md-3">
-          <a href="#" class="footer__logo">
-            <img src="/images/sevi-logo.svg" alt="Sevi">
-          </a>
-        </div>
-        <div class="col">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="footer__title">About us</div>
-              <div class="footer__item"><a href="#">Vision</a></div>
-              <div class="footer__item"><a href="#">Careers</a></div>
-              <div class="footer__item"><a href="#">Blog</a></div>
-              <div class="footer__item"><a href="#">Terms of service</a></div>
-              <div class="footer__item"><a href="#">Donate</a></div>
-            </div>
-            <div class="col-md-3">
-              <div class="footer__title">Help</div>
-              <div class="footer__item"><a href="#">Help center</a></div>
-              <div class="footer__item"><a href="#">Report a problem</a></div>
-              <div class="footer__item"><a href="#">Suggesting Edits</a></div>
-              <div class="footer__item"><a href="#">Contact Us</a></div>
-            </div>
-            <div class="col-md-3">
-              <div class="footer__title">Develop</div>
-              <div class="footer__item"><a href="#">Developming center</a></div>
-              <div class="footer__item"><a href="#">API Documentation</a></div>
-              <div class="footer__item"><a href="#">Writing a Book</a></div>
-              <div class="footer__item"><a href="#">Add a Book</a></div>
-            </div>
-            <div class="col-md-3">
-              <div class="footer__title">Discover</div>
-              <div class="footer__item"><a href="#">Home</a></div>
-              <div class="footer__item"><a href="#">Books</a></div>
-              <div class="footer__item"><a href="#">Authors</a></div>
-              <div class="footer__item"><a href="#">Subjects</a></div>
-              <div class="footer__item"><a href="#">Advanced search</a></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <hr>
-    <div class="footer__bottom container">
-      <div class="row justify-content-center">
-        <div class="col-auto footer__copyright">
-          © 2019, Sevi Company
-        </div>
-        <div class="col-auto">
-          <a href="#" class="footer__social ">
-            <span class="sprite sprite--linkedin"></span>
-          </a>
-          <a href="#" class="footer__social ">
-            <span class="sprite sprite--twitter"></span>
-          </a>
-          <a href="#" class="footer__social ">
-            <span class="sprite sprite--youtube"></span>
-          </a>
-          <a href="#" class="footer__social ">
-            <span class="sprite sprite--facebook"></span>
-          </a>
-          <a href="#" class="footer__social ">
-            <span class="sprite sprite--insta"></span>
-          </a>
+    </section>
+
+    <footer class="footer">
+
+      <div class="footer__top container">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="#" class="footer__logo">
+              <img src="/images/sevi-logo.svg" alt="Sevi">
+            </a>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 footer__col">
+                <div class="footer__title">About us</div>
+                <div class="footer__item"><a href="#">Vision</a></div>
+                <div class="footer__item"><a href="#">Careers</a></div>
+                <div class="footer__item"><a href="#">Blog</a></div>
+                <div class="footer__item"><a href="#">Terms of service</a></div>
+                <div class="footer__item"><a href="#">Donate</a></div>
+              </div>
+              <div class="col-md-3 col-sm-6 footer__col">
+                <div class="footer__title">Help</div>
+                <div class="footer__item"><a href="#">Help center</a></div>
+                <div class="footer__item"><a href="#">Report a problem</a></div>
+                <div class="footer__item"><a href="#">Suggesting Edits</a></div>
+                <div class="footer__item"><a href="#">Contact Us</a></div>
+              </div>
+              <div class="col-md-3 col-sm-6 footer__col">
+                <div class="footer__title">Develop</div>
+                <div class="footer__item"><a href="#">Developming center</a></div>
+                <div class="footer__item"><a href="#">API Documentation</a></div>
+                <div class="footer__item"><a href="#">Writing a Book</a></div>
+                <div class="footer__item"><a href="#">Add a Book</a></div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="footer__title">Discover</div>
+                <div class="footer__item"><a href="#">Home</a></div>
+                <div class="footer__item"><a href="#">Books</a></div>
+                <div class="footer__item"><a href="#">Authors</a></div>
+                <div class="footer__item"><a href="#">Subjects</a></div>
+                <div class="footer__item"><a href="#">Advanced search</a></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+      <hr>
+      <div class="footer__bottom container">
+        <div class="row justify-content-center">
+          <div class="col-auto footer__copyright">
+            © 2019, Sevi Company
+          </div>
+          <div class="col-auto">
+            <a href="#" class="footer__social ">
+              <span class="sprite sprite--linkedin"></span>
+            </a>
+            <a href="#" class="footer__social ">
+              <span class="sprite sprite--twitter"></span>
+            </a>
+            <a href="#" class="footer__social ">
+              <span class="sprite sprite--youtube"></span>
+            </a>
+            <a href="#" class="footer__social ">
+              <span class="sprite sprite--facebook"></span>
+            </a>
+            <a href="#" class="footer__social ">
+              <span class="sprite sprite--insta"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
   <script src="js/app.js"></script>
 </body>
