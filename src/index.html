@@ -86,12 +86,15 @@
       <img src="images/dots-bottom.png" class="hero__dots-bottom" alt="">
       <div class="container">
         <div class="row hero__row">
-          <div class="hero__left col-md-6 d-flex flex-column" data-aos="fade-left" >
-            <h2 class="hero__title heading heading--hero mb-4 heading-sm" >Today's research,
-              tomorrow's innovation</h2>
-            <p class="hero__subheading">
-              Accelerating research discovery to shape a better future
-            </p>
+          <div class="hero__left col-md-6 d-flex flex-column">
+            <div data-aos="fade-left">
+              <h2 class="hero__title heading heading--hero mb-4 heading-sm">Today's research,
+                tomorrow's innovation</h2>
+              <p class="hero__subheading">
+                Accelerating research discovery to shape a better future
+              </p>
+            </div>
+
             <div class="hero__search">
               <input type="search" name="s" id="search" placeholder="Seacrh books, articles, keywords...">
             </div>
@@ -109,7 +112,7 @@
         <h3 class="section__heading heading heading--resources text-center">Our <span>Resources</span></h3>
         <div class="row">
 
-          <div class="col-md-3 col-sm-6 resource" data-aos="fade-up">
+          <div class="col-md-3 col-sm-6 resource" data-aos="fade-up" data-aos-duration="1000">
             <img src="images/researchers.png" class="resource__icon">
             <h4 class="resource__heading heading heading--resource">Researchers</h4>
             <p class="resource__text">
@@ -522,8 +525,8 @@
 
     <section class="section section--create-library ">
       <div class="container">
-        <div class="row  flex-row-sm  flex-row-sm flex-column-reverse" >
-          <div class="col-md-6" data-aos="fade-left">
+        <div class="row  flex-row-sm  flex-row-sm flex-column-reverse">
+          <div class="col-md-6" data-aos="fade-right">
             <h3 class="section__heading heading heading--create-library">Create <span>your own <br> mobile
                 library</span></h3>
             <p class="section__text">
@@ -537,8 +540,8 @@
             </div>
           </div>
           <div class="col-md-6" style="position: static;">
-            <div class="section__image section__image--library">
-              <div class="section__phone">
+            <div id="phoneContainer" class="section__image section__image--library">
+              <div class="section__phone" data-aos-anchor="#phoneContainer" data-aos="fade-up" data-aos-offset="500">
                 <img src="images/app-design.png" alt="">
               </div>
 

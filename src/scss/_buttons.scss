@@ -22,19 +22,22 @@
     bottom: 30px;
     right: 30px;
     border-radius: 50%;
-    color: $primary-darken;
+    color: $white;
     width: $size;
     height: $size;
     line-height: $size;
-    background-color: $white;
+    background-color: $primary;
     box-shadow: $box-shadow-to-top;
-    border: 1px solid $border-color;
+    transition: transform 0.25s ease-in, background-color 0.25s ease-in;
+    transform: translate(0, 0);
+    // border: 1px solid $border-color;
     svg {
       margin-bottom: 4px;
     }
     &:hover {
-      color: $primary-darken;
-      background-color: $white;
+      color: $white;
+      background-color: $primary-darken;
+      transform: translate(0, -2px);
     }
   }
 }
