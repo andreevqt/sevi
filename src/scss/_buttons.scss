@@ -15,7 +15,8 @@
 
   &--to-top {
     $size: 48px;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     padding: 0;
     position: fixed;
     z-index: 9999;
@@ -28,7 +29,7 @@
     line-height: $size;
     background-color: $primary;
     box-shadow: $box-shadow-to-top;
-    transition: transform 0.25s ease-in, background-color 0.25s ease-in;
+    transition: all 0.25s ease-in;
     transform: translate(0, 0);
     // border: 1px solid $border-color;
     svg {
