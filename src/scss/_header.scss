@@ -24,7 +24,7 @@
       fill: currentColor;
     }
     display: none;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
       display: block;
     }
   }
