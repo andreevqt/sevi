@@ -1,5 +1,5 @@
-# Startuply - startup landing page
-This is an implementation of psd template provided by [Abdullah Un Noman ](https://dribbble.com/unnoman)
+# Sevi - landing page
+This is an implementation of psd template provided by [ Aryo Pamungkas ](https://dribbble.com/musicalryo)
 
 ## Build
     npm install
