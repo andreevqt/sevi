@@ -40,6 +40,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 body {
+  overflow-x: hidden;
   position: relative;
   @include media-breakpoint-down(sm) {
     font-size: 16px;
@@ -132,4 +133,8 @@ a {
     visibility: visible;
     // display: inline-block;
   }
+}
+
+.aos-container {
+  overflow-x: hidden;
 }
