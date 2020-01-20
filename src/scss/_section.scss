@@ -18,6 +18,12 @@
 
   &--libraries {
     position: relative;
+    #{$parent}__image-container {
+      top: 0;
+      left: 0;
+      width: 50%;
+      // background-color: lightgray;
+    }
   }
 
   &--create-library {
@@ -52,9 +58,86 @@
     }
   }
 
+  &__image-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    /*  background-color: lightgray; */
+  }
+
+  &__triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: auto;
+  }
+
+  &__flower {
+    position: absolute;
+    bottom: 20%;
+    overflow: visible;
+    width: 10%;
+  }
+
+  &__bookcase {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    bottom: 30%;
+    right: 0;
+  }
+
+  &__people {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    bottom: 20%;
+    right: 10%;
+  }
+
+  &__bookcase-2 {
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__triangle-2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 64%;
+  }
+
+  &__woman {
+    position: absolute;
+    left: 56%;
+    bottom: 0;
+    width: 18%;
+  }
+
+  &__flower-2 {
+    overflow: visible;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10%;
+  }
+
+  &__dots-2 {
+    position: absolute;
+    width: 20%;
+    left: 5%;
+    bottom: 40%;
+
+  }
+
   &__image {
     position: static;
-    &::before {
+    /* &::before {
       @extend %background-image;
       background-size: contain;
       background-position: left;
@@ -66,8 +149,8 @@
       width: 50%;
       content: "";
     }
-
-    &--hero {
+ */
+    &__hero {
     }
 
     &--library {
@@ -107,7 +190,7 @@
     }
 
     &--hero {
-      position: static;
+      /*       position: static;
       &::before {
         z-index: -1;
         width: 60%;
@@ -128,6 +211,7 @@
           width: 100%;
         }
       }
+ */
     }
   }
 

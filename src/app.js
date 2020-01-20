@@ -5,12 +5,14 @@ import AOS from 'aos';
 AOS.init({
   delay: 200,
   duration: 1500,
+  mirror: true,
+  once: true
 });
 
 $(() => {
   const body = $('body');
   const menuToggle = $('.header__menu-toggle');
-  menuToggle.click((e) => {
+  menuToggle.click((e) => { 
     body.addClass('mobile-menu-is-shown');
   })
   const closeMenu = $('.header__close');

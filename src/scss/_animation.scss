@@ -1,0 +1,39 @@
+.animate-flower {
+  transform-origin: bottom center;
+  animation-iteration-count: infinite;
+  animation-name: leaf-shake;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+
+  &--left-leaf.aos-aniamted {
+    animation-delay: 0.2s;
+  }
+
+  &--right-leaf.aos-animated {
+    animation-delay: 0;
+  }
+}
+
+@keyframes leaf-shake {
+  $deg: 3deg;
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate($deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-$deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
