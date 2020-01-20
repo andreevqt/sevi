@@ -85,6 +85,7 @@ a {
 }
 
 .content-wrapper {
+  overflow-x: hidden;
   /* margin: 0 auto;
   max-width: 2000px; */
 }
@@ -136,5 +137,5 @@ a {
 }
 
 .aos-container {
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
