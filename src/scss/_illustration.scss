@@ -1,0 +1,160 @@
+.illustration {
+  position: absolute;
+
+  &__triangle-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 40%;
+    height: auto;
+  }
+
+  &__triangle-2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 64%;
+  }
+
+  &__triangle-3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+  }
+
+  &__flower-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: visible;
+    width: 10%;
+    @include media-breakpoint-down(sm) {
+      left: 30%;
+    }
+  }
+
+  &__flower-2 {
+    overflow: visible;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10%;
+  }
+
+  &__flower-3 {
+    overflow: visible;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+  }
+
+  &__bookcase-1 {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    bottom: 10%;
+    right: 0;
+    @include media-breakpoint-down(sm) {
+      width: 30%;
+    }
+  }
+
+  &__bookcase-2 {
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__people {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    bottom: 0;
+    right: 10%;
+
+    @include media-breakpoint-down(sm) {
+      width: 40%;
+    }
+  }
+
+  &__woman {
+    position: absolute;
+    left: 56%;
+    bottom: 0;
+    width: 18%;
+  }
+
+  &__man {
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    width: 20%;
+  }
+
+  &__dots-1 {
+    position: absolute;
+    width: 20%;
+    left: 40%;
+    bottom: 70%;
+    @include media-breakpoint-down(sm) {
+      width: 10%;
+      left: 66%;
+    }
+    // opacity: 0.1;
+  }
+
+  &__dots-2 {
+    position: absolute;
+    width: 20%;
+    left: 5%;
+    bottom: 40%;
+  }
+
+  &__dots-3 {
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    width: 20%;
+  }
+
+  &--hero {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+  }
+
+  &--libraries {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 50%;
+  }
+
+  &--create-library {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.illustration-container {
+  position: static;
+  z-index: -1;
+  @include media-breakpoint-down(sm) {
+    position: relative;
+    height: 200px;
+  }
+}

@@ -9,8 +9,7 @@
   }
 
   &__heading {
-    color: #fdc800;
-
+    color: $yellow;
     span {
       color: $primary-darken;
     }
@@ -18,12 +17,6 @@
 
   &--libraries {
     position: relative;
-    #{$parent}__image-container {
-      top: 0;
-      left: 0;
-      width: 50%;
-      // background-color: lightgray;
-    }
   }
 
   &--create-library {
@@ -46,177 +39,20 @@
       }
 
       @include media-breakpoint-down(sm) {
-        position: static;
-        display: inline-block;
-        margin-bottom: 20px;
         img {
-          width: 100%;
-          height: auto;
-          // height: 300px;
+          height: 200px;
         }
       }
     }
-  }
 
-  &__image-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 50%;
-    /*  background-color: lightgray; */
-  }
-
-  &__triangle {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 80%;
-    height: auto;
-  }
-
-  &__flower {
-    position: absolute;
-    bottom: 20%;
-    overflow: visible;
-    width: 10%;
-  }
-
-  &__bookcase {
-    position: absolute;
-    width: 40%;
-    height: auto;
-    bottom: 30%;
-    right: 0;
-  }
-
-  &__people {
-    position: absolute;
-    width: 60%;
-    height: auto;
-    bottom: 20%;
-    right: 10%;
-  }
-
-  &__bookcase-2 {
-    position: absolute;
-    width: 50%;
-    bottom: 0;
-    left: 0;
-  }
-
-  &__triangle-2 {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 64%;
-  }
-
-  &__woman {
-    position: absolute;
-    left: 56%;
-    bottom: 0;
-    width: 18%;
-  }
-
-  &__flower-2 {
-    overflow: visible;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 10%;
-  }
-
-  &__dots-2 {
-    position: absolute;
-    width: 20%;
-    left: 5%;
-    bottom: 40%;
-
-  }
-
-  &__image {
-    position: static;
-    /* &::before {
-      @extend %background-image;
-      background-size: contain;
-      background-position: left;
-      position: absolute;
-      z-index: -1;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 50%;
-      content: "";
-    }
- */
-    &__hero {
-    }
-
-    &--library {
-      &::before {
-        background-image: url("../images/picture_app.svg");
-        background-position: right bottom;
-        right: 0;
-        width: 50%;
-        left: auto;
-      }
-
+    #{$parent}__illustration-container {
       @include media-breakpoint-down(sm) {
-        text-align: center;
-
-        &::before {
-          content: none;
-        }
+        height: 300px;
       }
-    }
-
-    &--libraries {
-      &::before {
-        background-image: url("../images/picture_libraries.svg");
-      }
-
-      @include media-breakpoint-down(sm) {
-        height: 150px;
-        &::before {
-          top: 0;
-          background-position: top left;
-          background-size: contain;
-          display: inline-block;
-          width: 100%;
-          height: 150px;
-        }
-      }
-    }
-
-    &--hero {
-      /*       position: static;
-      &::before {
-        z-index: -1;
-        width: 60%;
-        background-position: right;
-        background-image: url("../images/picture_app_top.svg");
-        right: 0;
-        left: auto;
-        background-position: top right;
-      }
-
-      @include media-breakpoint-down(sm) {
-        height: 100px;
-        &::before {
-          top: 0;
-          background-position: top right;
-          background-size: auto 200px;
-          display: inline-block;
-          width: 100%;
-        }
-      }
- */
     }
   }
 
   &__text {
-    // color: rgba($primary, 0.6);
     margin-bottom: 64px;
   }
 
