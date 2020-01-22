@@ -14,14 +14,8 @@
     height: 100%;
   }
 
-  &__menu-toggle {
-    padding: 15px;
-    background-color: $white;
-    border: none;
-    color: $primary-darken;
-    svg {
-      fill: currentColor;
-    }
+  &__toggle {
+    margin-left: auto;
     display: none;
     @include media-breakpoint-down(sm) {
       display: block;
@@ -44,7 +38,7 @@
     font-weight: 500;
     margin-left: auto;
     margin-right: 32px;
-    // color: rgba($primary, 0.6);
+    transition: transform 0.3s ease-out;
     .menu__item {
       &--active {
         color: $primary-darken;
@@ -56,7 +50,24 @@
     }
 
     @include media-breakpoint-down(sm) {
-      display: none;
+      transform: translateX(100%);
+      overflow-y: auto;
+      position: fixed;
+      top: 64px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 20px 20px;
+      align-items: stretch;
+      flex-direction: column;
+      background-color: $white;
+      z-index: 99999;
+      margin-right: 0;
+      .menu__item {
+        a {
+          padding: 20px;
+        }
+      }
     }
   }
 
@@ -118,24 +129,7 @@
   overflow: hidden;
   @include media-breakpoint-down(sm) {
     .header__menu {
-      padding: 45px 20px 20px 20px;
-      align-items: stretch;
-      display: flex;
-      flex-direction: column;
-      background-color: $white;
-      position: fixed;
-      z-index: 99999;
-      margin-right: 0;
-      top: 64px;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      overflow-y: auto;
-      .menu__item {
-        a {
-          padding: 20px;
-        }
-      }
+      transform: translateX(0);
     }
 
     .header__buttons {

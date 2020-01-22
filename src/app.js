@@ -12,10 +12,9 @@ AOS.init({
 $(() => {
   const body = $('body');
 
-  const menuToggle = $('.header__menu-toggle');
-  menuToggle.click((e) => {
+  $('.header__toggle').click((e) => {
     body.toggleClass('mobile-menu-is-shown');
-  })
+  });
 
   const handleToTop = () => {
     const offset = 100;
@@ -44,7 +43,7 @@ $(() => {
       header.removeClass('header--is-hidden');
     }
 
-    if(scroll >= 400) {
+    if (scroll >= 400) {
       header.addClass('header--transition');
     } else {
       header.removeClass('header--transition');
@@ -60,4 +59,5 @@ $(() => {
   handleHeader()
 
   $(window).scroll(handleHeader);
+
 });
