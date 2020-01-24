@@ -32,6 +32,7 @@ $headings-color: $primary-darken;
 $orange: #fc6a42;
 $pink: #f5989d;
 $green: #82ca9c;
+$white: #fff;
 
 $font-size-base: 1.25rem;
 $line-height-base: 1.75;
@@ -48,11 +49,11 @@ $box-shadow-to-top: rgba($black, 0.1) 0px 2px 0px 0px, rgba($black, 0.04) 0px 0p
 $header-box-shadow: rgba($black, 0.1) 0px 0px 20px;
 
 // toggle
-$toggle-height: 25px;
-$toggle-width: 40px;
+$toggle-height: 20px;
+$toggle-width: 30px;
 $toggle-padding: 3px;
-$toggle-inner-height: 4px;
-$toggle-bg: $primary-darken;
-$toggle-color: $white;
+$toggle-inner-height: 2px;
+$toggle-bg: transparent;
+$toggle-color: $primary;
 
 
