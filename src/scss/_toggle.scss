@@ -2,7 +2,7 @@
   position: relative;
   border: none;
   display: inline-block;
-  background-color: #fff;
+  background-color:  $toggle-bg;
   padding: $toggle-padding;
   width: $toggle-width;
   height: $toggle-height;
@@ -23,7 +23,7 @@
   &__inner,
   &::before,
   &::after {
-    background-color: $toggle-bg;
+    background-color: $toggle-color;
     position: absolute;
     height: $toggle-inner-height;
     right: $toggle-padding;
