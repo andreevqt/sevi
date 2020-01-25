@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 2;
-  height: 200px;
+  padding: 70px;
   line-height: 1;
   $parent: &;
 
@@ -25,7 +25,7 @@
   &__logo img {
     height: 40px;
     @include media-breakpoint-down(sm) {
-      height: 30px;
+      height: 20px;
     }
   }
 
@@ -53,7 +53,7 @@
       transform: translateX(100%);
       overflow-y: auto;
       position: fixed;
-      top: 64px;
+      top: 60px;
       left: 0;
       right: 0;
       bottom: 0;
@@ -61,7 +61,6 @@
       align-items: stretch;
       flex-direction: column;
       background-color: $white;
-      z-index: 99999;
       margin-right: 0;
       .menu__item {
         a {
@@ -104,6 +103,7 @@
   &--is-hidden {
     background-color: $white;
     position: fixed;
+    z-index: 99999;
     top: 0;
     margin-top: -200px;
   }
@@ -114,12 +114,15 @@
 
   &--transition-start {
     margin-top: 0;
-    height: 120px;
+    padding: 20px;
     box-shadow: $header-box-shadow;
+    #{$parent}__logo img {
+      height: 30px;
+    }
   }
 
   @include media-breakpoint-down(sm) {
-    height: 64px;
+    padding: 20px 0;
     background-color: $white;
     box-shadow: $header-box-shadow;
   }

@@ -25,9 +25,7 @@
   }
 
   &__subheading {
-    // font-size: 20px;
     margin-bottom: 80px;
-    color: rgba($primary, 0.6);
     @include media-breakpoint-down(sm) {
       margin-bottom: 40px;
     }
